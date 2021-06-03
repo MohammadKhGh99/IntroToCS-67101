@@ -1,0 +1,52 @@
+mohammadgh
+208653220
+Mohammad Ghanayem
+
+================================
+=    README for ex8.py , ex8   =
+================================
+
+================================
+=          Description:        =
+================================
+
+This program divided to two parts:
+    The First One:
+        A code that gets a sudoku borad and returns True if there is
+        a solution for it and False if there is not.
+        And it consists of three helper functions:
+
+        1- find_pos_of_zero()
+            This function return the place of the first zero that will find in
+            the sudoku board, if there is not it returns (-1,-1).
+
+        2- valid_option()
+            This function checks if we can replace the zero with the number or
+            not, according to the sudoku rules.
+
+        3- sudoku_helper()
+            In this function I did all the work in it and called it in the
+            main function.
+
+    The Second One:
+        A code consists of 3 functions:
+            1- print_k_subsets()
+                This function prints all the subsets, as list, as long as k,
+                and in range of {0,...,n-1}.
+                * I have got help with helper function, print_k_helper().
+
+            2- fill_k_subsets()
+                This function fill a list with all the subsets, as list, as long as k,
+                and in range of {0,...,n-1}, but returns anything.
+                * I have got help with two helper functions, k_subsets_helper()
+                ,and a function that returns list.
+
+            3- return_k_subsets()
+                This function fill a list with all the subsets, as list,
+                as long as k, and in range of {0,...,n-1}, and return the list
+                of lists.
+                * I have got help with helper function,
+                all_lists_no_arg_helper.
+
+
+I got help from Tirgul 8 for solving the second part of the exercise.

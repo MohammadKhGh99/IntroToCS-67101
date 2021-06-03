@@ -1,0 +1,51 @@
+mohammadgh
+
+208653220
+
+Mohammad Ghanayem
+
+===================================
+======      Description      ======
+===================================
+
+1- diagnose()
+    this function diagnose what illness does the symptoms lead to
+    :param symptoms: the symptoms
+    :return: returns the leaf (illness) that the symptoms lead to
+
+2- calculate_success_rate()
+    this function calculate the rate of the success of finding an
+    illness in the records
+    :param records: the records
+    :return: returns the rate
+
+3- all_illnesse()
+    i used two helper functions, one for general help and another for
+    converting dict to sorted list.
+    this function takes all the illnesses and sort them by their value
+    :return: returns a sorted list of illnesses
+
+4- paths_to_illness()
+    this function finds all the paths for an illness
+    :param illness: the chisen illness
+    :return: return a list of lists of the paths
+    i used one helper function.
+
+5- build_tree()
+    this function build the a tree by several conditions.
+    i used several helper function in order to wrote this function.
+
+6- most_rare_illness()
+    this function checks the less illness that we arrived
+    :param records: the records to check with
+    :return: returns the less illness that we arrived to by the records
+
+7- optimal_tree()
+    this function takes all the subsets of the symptoms at depth length and
+    build a tree from each list theen takes the tree with the bigger succes
+    rate of one of thtrees
+    :param records: list of records
+    :param symptoms: list of symptoms
+    :param depth: the depth of the trees
+    :return: returns the tree (Node) that her success rate is the bigger
+    from the others

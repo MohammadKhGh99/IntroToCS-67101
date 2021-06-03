@@ -1,0 +1,75 @@
+mohammadgh
+208653220
+Mohammad Ghanayem
+
+*****************
+This code has 10 major recursive functions and some helping function, I used
+the helping functions to help me do what the exercise wants, so I will explain
+what all the function do:
+
+    1- print_to_n(n)
+        this function prints the numbers from 1 to n recursive.
+
+    2- print_reverse(n)
+        this function prints the number from n to 1 recursive.
+
+    3- is_prime(n)
+        this function checks if the chosen number is prime or not.
+        I used a helping function:
+        * has_divisor_smaller_than(n, i)
+          this function checks if the number n divides on one of the numbers
+          smaller than i.
+
+    4- exp_n_x(n, x)
+        this function calculates the exponential sum from 0 to n.
+        I used a helping function:
+        * factorial(n)
+          this function calculates the factorial of the chosen number,
+          the multiplication of the numbers from n to 1.
+
+    5- play_hanoi(hanoi, n, src, dest, temp)
+        this function plays the hanoi game.
+
+    6- print_sequence(char_list, n)
+        this function prints texts with n length from the char list, by calling
+        the helping function string_from_list.
+        I used a helping function:
+        * string_from_list(char_list, n, text)
+          this function prints texts with n length from the char list.
+
+    7- print_no_repetition_sequence(char_list, n)
+        this function prints texts with n length from the char list, without
+        repetition for each char in the text, by calling the helping function
+        without_char_repeat.
+        I used a helping function:
+        * without_char_repeat(char_list, n, text)
+          this function prints texts with n length from the char list, without
+          repetition for each char in the text.
+
+    8- parentheses(n)
+        this function prints strings contains '(' and ')', but the number of '('
+        must be bigger than or equals the number of ')'.
+        I used a helping function:
+        * parenthesis_helper(n,k, text)
+        this function prints strings contains '(' and ')', but the number of '('
+        must be bigger than or equals the number of ')'.
+
+    9- up_and_right(n, k)
+        this function prints texts contains 'u' and 'r' by the number k and n
+        respectively.
+        I used a helping function:
+        * right_up(n, k, text)
+          this function prints texts contains 'u' and 'r' by the number k and n
+          respectively.
+
+    10- flood_fill(image,start)
+        this function convert the '.' to '*' in the start place and around it
+        in the matrix.
+
+I and my friend Ibrahem Asad were with each other while we was coding, so we
+thought together but not copying!!!
+
+Analyzing runtime:
+    * is_prime: O(sqrt(n)) = 2*sqrt(n)
+    * print_no_repetition_sequence: O(n^2) = 3*(n^2)
+    * flood_fill: O(n) = 4*n

@@ -1,0 +1,44 @@
+
+
+=====================================================
+===============     descriotion      ================
+=====================================================
+
+this program is mainly a game  we set, and it is called "asteroids".
+the program has the screen, on the screen we can see everything, and mainly
+playing the game. at the beginning we had the number of lives that lived, the
+score that user have after shooting the asteroids, the ship,
+the asteroids, and the torpedoes.
+
+now to talk about each one of them:
+score: the score is the users aim, so he will try getting the more points as
+possible, the way the user will get the points is by shooting the the
+asteroids, so shooting asteroids with size(3) the user gets 20 point,
+shooting asteroids with size(2) the user gets 50 point, shooting
+asteroids with size(1) the user gets 100 point.
+
+lives: each time the user play he has  3 lives: the user will miss them after
+a crash between the ship and the asteroids.
+
+ship: the ship mainly represents the user, so the user controls the movements
+of the ship, and from the ship the user can shoot (in specific conditions)
+the asteroids and get the points.
+
+asteroids: the asteroids is the objects in our game, and our goal is
+to shoot them, after hitting the asteroid each time, the asteroid will
+be divided(the first time it will be divided to two parts, the same for
+the second time, the asteroid will be crashed if its size is 1.
+
+torpedoes: torpedoes is our weapon in this game, the user fire it from our ship
+and goes with a speed in one direction, and if it collide with the asteroid,
+the asteroid will be divided.
+
+so we have explain about the game, and how we can play it.
+
+In this program wu used the private init instead of public, so we could use
+the public because it is easier to code it. but the reason we used the private
+is that no one can change values in it.3
+
+we have done a special torpedo we set by pressing on the "s" and when the
+torpedo hits the asteroids, the asteroid will be totally destroyed. and the
+user have 5 special torpedoes to use in the game.

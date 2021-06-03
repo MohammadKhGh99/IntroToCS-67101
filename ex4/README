@@ -1,0 +1,28 @@
+mohammadgh
+208653220
+Mohammad Ghanayem
+the python file hangman.py starts the hangman game that known for everyone
+the user starts to enter strings, if the string not lowercase English letter
+a message appears for the wrong input, if the letter that entered is not
+in the hidden word it will be added to the wrong guesses message, also if the
+letter has been chosen and in pattern
+the user can ask for hint
+if the hangman has been hanged a message will appear for the failure of the
+user, like this if the user won but another message
+if the game ends two buttons will appear one for playing again and another
+for no more games to exit the game.
+
+section C-q1:
+('apple','___l_','1')=='___l_': I chose this input because the function must
+get a lowercase english letter, but here the letter is '1'.
+('mohammad','___a__a_','m')=='m__amma_': I chose this input because the letter
+'m' appears in the word more than one time.
+('science','_c___c_','c')=='_c___c_': I chose this input because the letter
+'c' is in pattern so the function will not add it again.
+('orange','__ang_','o')=='__ang_': I chose this input because the letter 'o'
+is in the word but the function didn't add it to the pattern.
+
+section C-q2:
+If I want to change the code to input the Hebrew letters, I will have to change
+ the range that I put for the dictionary, and the conditional if to another
+ that contains the unicode for the Hebrew letters.

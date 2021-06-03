@@ -1,0 +1,12 @@
+mohammadgh
+208653220
+Mohammad Ghanayem
+
+1.not working, because the function didn't receive lists
+2.-1, because there is a list and contains numbers an there is nothing wrong in
+ it
+ 3.not working, because the 'intro' is not a number to compare with
+ 4.not working, because the first number must be the range which the list will
+ contain.
+ 5.will return all the numbers and infinity working for the computer
+ 6.[0,2],[1,1]

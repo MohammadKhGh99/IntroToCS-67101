@@ -1,0 +1,100 @@
+We set this program for the wav files. At first the program gives the user the
+choice to choose one of the option:1) to edit the wave file: so the program
+here will alse give the user 6 options for editing the file:the first one is
+to do a reverse for the list of the voice, the second option is the speed
+acceleration:this function takes the samples in the even indexes from the
+requiered list, the third one is slowing the speed of the voice here the user
+can make the time of the voice longer than the original, this function adds to
+the required list between every two samples in the list a new sample that it
+is the average of the two samples. The fourth thing is increasing the volume,
+here the use can do an edit to the file with increasing the volume of the
+sound. And the fifth one is decreasing the volume of the voice. The sixth and
+last option in editing the wav files is the filter.
+
+2) the second option is consolidation of two wave files, here we can merge wave
+files in one file and to have a new sound that is composed from two sounds.
+
+3) the third option is composing tone, here our program will take a list from
+a file and rurn it into sound tone.
+
+For this program we have separate it to functions and we use it as helper functions.
+The main reason to make helper functions is to make the code easier to read and more efficent.
+Now we will explain about every single function:
+
+The functions:
+    1- change_file_input()
+        this function requires from the user to enter an input (1,2,3,4,5,6)
+        and while the input is not one of these numbers it will ask the user
+        to enter another input.
+    2- option_input()
+        this function requires from the user to enter an input (1,2,3,4),1 for
+        changing the wav file, 2 for consolidate two wav files, 3 for composite
+        txt file to wav file
+        the input in not one of these numbers it will ask the user to enter
+        another input.
+    3- file_input()
+        this function askes the user to enter the wav file name that he want to
+        use for the program, if the name of the file is not founded the function
+        askes the user to enter another input until the user enters an appropiate
+        input.
+    4- reverse_sound_list()
+        this function reverse the required list.
+    5- speed_acceleration()
+        this function takes the samples in the even indexes from the required
+        list.
+    6- slowing_speed()
+        this function adds to the required list between every two samples in the
+        list a new sample that it is the average of the two samples.
+    7- increasing_volume()
+        this function multiple the value of the sound list with 1.2, but if the
+        value exceed the number 32767 it will be replaced with it, and if it
+        exceed the number -32768 it will be replaced with it.
+    8- decreasing_volume()
+        this function divides the value of the sound list by 1.2.
+    9- filter()
+        this function filtering the values of the received list, by replacing
+        every value with the average of the value in the left and in the right
+        and itself.
+    10- simple_GCD()
+        this function works to find the gcd of two numbers
+    11- list1_longer_list2()
+        this function do the consolidation if the first list is longer than the
+        second list and the same frame rate.
+    12- list2_longer_list1()
+        this function do the consolidation if the second list is longer than
+        the first list and the same frame rate.
+    13- list1_equal_list2()
+        this function do the consolidation for two list that have the same
+        length and the same frame rate.
+    14- frame1_bigger_frame2()
+        this function consolidate the two lists, but the first frame rate is
+        bigger than the second frame rate and different length.
+    15- frame2_bigger_frame1()
+        this function consolidate the two lists, but the second frame rate is
+        bigger than the first frame rate and different length.
+    16- frames_equal()
+        this function consolidate the two lists with the same frame rate,
+        but maybe not the same length.
+    17- consolidation()
+        this function do all the consolidation with two lists and two frame rates.
+    18- sample_per_cycle()
+        this function takes the frequency f each letter and calculates the
+        samples per cycle.
+    19- read_wordlist_file()
+        open the file in the variable filename, and return the words in it
+    20- samples()
+        this function calculates the samples for each letter.
+    21- composition()
+        this function gets a text and makes it a sound.
+    22- change_file()
+        this function askes the user to enter wav file's name, and makes the
+        changes that the user wants.
+    23- transition_menu()
+        this function askes the user if he wants to change the file, or to save it.
+    24- main()
+        this function plays all program, by merging all the required functions
+        with each others.
+
+we used the copy library to make deep copy of a list.
+we used the math library to use the sin and pi.
+we used the os.path library to check if the entered file name existed or not.

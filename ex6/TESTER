@@ -1,0 +1,15 @@
+Hey!
+
+unzip the tester, then copy wave_editor.py file to the folder.
+
+It is important!! Write the name of the first function in your
+code in the appropriate row in the Tester.
+
+The test requires the mock package. You can install from the pip or through the pyCharm.
+
+after it, run through pytest
+
+Good luck!
+
+Nadav Har-Tuv
+nadav.har-tuv1@mail.huji.ac.il

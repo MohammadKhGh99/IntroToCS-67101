@@ -1,0 +1,22 @@
+mohammadgh
+208653220
+Mohammad Ghanayem
+The hello_turtle.py file:
+I used this websites while coding:
+https://docs.python.org/2/library/turtle.html#turtle.speed
+https://wiki.python.org/moin/ForLoop
+This code does 4 things by using the turtle functions:
+first the code draws a petal, then draws a flower and prepare the pen to draw
+the other one, until it draws the garden with the three flowers.
+The math_print.py file:
+I used this websites while writing my code:-
+*https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%A1_%D7%94%D7%96%D7%94%D7%91
+*https://docs.python.org/2/library/math.html
+
+This code does 6 things using math functions:
+*calculates and prints the golden ratio.
+*calculates and prints the third square of 6.
+*calculates and prints the hypotenuse of an angular triangle.
+*calculates and prints the value of pi.
+*calculates and prints the value of e.
+*calculates and prints the area of triangles.

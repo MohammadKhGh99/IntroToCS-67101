@@ -1,0 +1,78 @@
+def func(node,lst,records,all_dict):
+    if node is not None:
+        lst.append(node.data)
+        func(node.positive_child,lst,records)
+        lst.pop()
+        func(node.negative_child,lst,records)
+    else:
+        dic={}
+        for record in records:
+            flag=True
+            for l in lst:
+                if l not in record.symptoms:
+                    flag=False
+            if lst in record.symptoms:
+                if record.illness not in dic:
+                    dic[record.illness]=1
+                else:
+                    dic[record.illness]+=1
+        all_dict.update(dic)
+    return
+
+
+def build_tree_with_symptoms(symptoms, node, i):
+    if i == len(symptoms):
+        return
+    else:
+        for j in range(i * 2):
+            node.positive_child = Node(symptoms[i])
+            node.negative_child = Node(symptoms[i])
+        i += 1
+        build_tree_with_symptoms(symptoms, node.positive_child, i)
+        build_tree_with_symptoms(symptoms, node.negative_child,i)
+
+
+def add_illnesses_to_tree(node, record):
+    if node.positive_child is None:
+        if node.data in record.symptoms:
+            node.positive_child = Node(record.illness)
+        else:
+            node.negative_child = Node(record.illness)
+        return
+    else:
+        if node.data in record.symptoms:
+            node=node.positive_child
+        else:
+            node=node.negative_child
+        add_illnesses_to_tree(node,record)
+
+def func(node,lst,records,all_dict):
+    if node is not None:
+        lst.append(node.data)
+        func(node.positive_child,lst,records,all_dict)
+        lst.pop()
+        func(node.negative_child,lst,records,all_dict)
+    else:
+        dic={}
+        for record in records:
+            flag=True
+            for l in lst:
+                if l not in record.symptoms:
+                    flag=False
+                    break
+            if flag:
+                if record.illness not in dic:
+                    dic[record.illness]=1
+                else:
+                    dic[record.illness]+=1
+        all_dict.update(dic)
+    return
+
+
+def build_tree(records, symptoms):
+    tree_root = Node(symptoms[0])
+    node = tree_root
+    build_tree_with_symptoms(symptoms, tree_root, 1)
+    for record in records:
+        add_illnesses_to_tree(node, record)
+    return tree_root

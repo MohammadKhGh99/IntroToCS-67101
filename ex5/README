@@ -1,0 +1,15 @@
+mohammadgh
+208653220
+Mohammad Ghanayem
+
+this code have a lot of function:
+1-making a list from a file
+2-making a matrix from a file
+3-finding how much the words in the words list appeared in the matrix in a
+specific directions
+
+when we sum all the functions with each other we resulted in a game, to find
+the words in matrix.
+
+the function check() checks the inputs that i chose.
+i chose these inputs because each one is in a different direction
